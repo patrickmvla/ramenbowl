@@ -20,7 +20,7 @@ export default async function exchangeAccessToken(
     client_secret: process.env.VITE_CLIENT_SECRET,
     code,
     grant_type: "authorization_code",
-    redirect_url: process.env.VITE_REDIRECT_URL,
+    redirect_uri: process.env.VITE_REDIRECT_URI,
   };
 
   const url = "https://anilist.co/api/v2/oauth/token";
